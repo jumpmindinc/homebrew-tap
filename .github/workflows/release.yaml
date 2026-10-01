@@ -1,0 +1,9 @@
+name: Release
+on:
+  workflow_dispatch:
+
+jobs:
+  create-release:
+    uses: jumpmindinc/platform-github-workflows/.github/workflows/.reusable-common-release.yaml@v8
+    permissions:
+      contents: write
