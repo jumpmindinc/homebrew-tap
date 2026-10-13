@@ -1,25 +1,25 @@
 class Yoink < Formula
   desc "Commerce extension developer and operator CLI"
   homepage "https://github.com/jumpmindinc/commerce-yoink"
-  version "0.5.12"
+  version "0.5.13"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://yoink.cdn.jumpmind.cloud/yoink/0.5.12/yoink-aarch64-apple-darwin.tar.gz"
-      sha256 "8f3544d7dd6de7e7496445ac4ee0567c0f08677fd4c297dcdb743e5054bfbcb1"
+      url "https://yoink.cdn.jumpmind.cloud/yoink/0.5.13/yoink-aarch64-apple-darwin.tar.gz"
+      sha256 "bc816705974d852d77d31e6be410cb649ec362c971dce208cd6fa7291c6c5bc7"
     end
     if Hardware::CPU.intel?
-      url "https://yoink.cdn.jumpmind.cloud/yoink/0.5.12/yoink-x86_64-apple-darwin.tar.gz"
-      sha256 "ccbf20febc874f2562322215b167b64acec9c3d0472d1c0b1d8a2737d3017e30"
+      url "https://yoink.cdn.jumpmind.cloud/yoink/0.5.13/yoink-x86_64-apple-darwin.tar.gz"
+      sha256 "207c0e33a3c5c8a999535db307a41214ef80c72bb0fe0bd86ba43b8b0bdd9db4"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://yoink.cdn.jumpmind.cloud/yoink/0.5.12/yoink-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "aad7a22e14ecc633bd824763c7d854bc5557a969b53dc2cb902af3fef7e32cfc"
+      url "https://yoink.cdn.jumpmind.cloud/yoink/0.5.13/yoink-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "02aad783777d6db1a5e901bf1626ede0c6de4e64394341be573c1eb8f83d3eb8"
     end
     if Hardware::CPU.intel?
-      url "https://yoink.cdn.jumpmind.cloud/yoink/0.5.12/yoink-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "fafa183aecaf4c00a0c4d7f8da5b9324057df30633fe1bbef28d31ae57860339"
+      url "https://yoink.cdn.jumpmind.cloud/yoink/0.5.13/yoink-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "156f5997ddfd7e6adb6059056d50549945536c34da83e53d1cdf2c51c93621ef"
     end
   end
   license "LicenseRef-Proprietary"
