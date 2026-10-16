@@ -1,26 +1,26 @@
 {
     "$comment": [
-        "Scoop manifest template. The release workflow substitutes 0.5.20,",
-        "https://yoink.cdn.jumpmind.cloud/yoink/0.5.20/yoink-x86_64-pc-windows-msvc.zip and 52917299ddc747904ddef01f793926a2cefa7d7af9f3747766ac8930c320d531 and commits the result to the bucket repository.",
+        "Scoop manifest template. The release workflow substitutes 0.5.21,",
+        "https://yoink.cdn.jumpmind.cloud/yoink/0.5.21/yoink-x86_64-pc-windows-msvc.zip and 7ce581172c3fd0c78e9d583b2ef0e38ae1595c16318f31b66d50e8a972a002ad and commits the result to the bucket repository.",
         "",
-        "https://yoink.cdn.jumpmind.cloud/yoink/0.5.20/yoink-x86_64-pc-windows-msvc.zip is on the public downloads CDN, never a GitHub release: this",
+        "https://yoink.cdn.jumpmind.cloud/yoink/0.5.21/yoink-x86_64-pc-windows-msvc.zip is on the public downloads CDN, never a GitHub release: this",
         "repository is private, so a GitHub URL is a 404 for everyone who would",
         "install from a public bucket. There is no `checkver`/`autoupdate` for the",
         "same reason: the release workflow pushes the new manifest itself, and",
         "the GitHub API it would poll is not open to the public either.",
         "",
-        "52917299ddc747904ddef01f793926a2cefa7d7af9f3747766ac8930c320d531 is read from the .sha256 the release publishes beside the",
+        "7ce581172c3fd0c78e9d583b2ef0e38ae1595c16318f31b66d50e8a972a002ad is read from the .sha256 the release publishes beside the",
         "archive, the same one the patched PowerShell installer verifies against,",
         "so there is exactly one published hash per archive."
     ],
-    "version": "0.5.20",
+    "version": "0.5.21",
     "description": "Command-line client for Jumpmind Commerce",
     "homepage": "https://github.com/jumpmindinc/commerce-yoink",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://yoink.cdn.jumpmind.cloud/yoink/0.5.20/yoink-x86_64-pc-windows-msvc.zip",
-            "hash": "52917299ddc747904ddef01f793926a2cefa7d7af9f3747766ac8930c320d531"
+            "url": "https://yoink.cdn.jumpmind.cloud/yoink/0.5.21/yoink-x86_64-pc-windows-msvc.zip",
+            "hash": "7ce581172c3fd0c78e9d583b2ef0e38ae1595c16318f31b66d50e8a972a002ad"
         }
     },
     "bin": "yoink.exe",
